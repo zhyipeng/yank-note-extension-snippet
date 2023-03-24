@@ -1,6 +1,7 @@
 <template>
   <div class="ext-container">
     <h3>{{ i18n.$t.value('snippet_title') }}</h3>
+    <span class="snippet-desc">{{ i18n.$t.value('snippet_desc') }}</span>
     <ul class="snippet-list">
       <li class="snippet-row">
         <div class="trigger description">
@@ -83,11 +84,11 @@ onMounted(loadSnippets)
 
 .snippet-list {
   list-style: none;
-  margin: 0;
   max-height: 800px;
   overflow: auto;
   border-top: 2px solid var(--g-color-10);
   padding: 15px 0 0;
+  margin: 10px 0 0;
 }
 
 .snippet-row {
@@ -117,5 +118,9 @@ onMounted(loadSnippets)
 .description {
   font-size: 0.8rem;
   text-align: center;
+}
+
+.snippet-desc {
+  font-size: 0.8rem;
 }
 </style>

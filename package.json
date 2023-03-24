@@ -1,6 +1,6 @@
 {
   "name": "yank-note-extension-snippet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Text Snippet",
   "description": "Insert text snippet quickly",
   "displayName_ZH-CN": "文本片段",

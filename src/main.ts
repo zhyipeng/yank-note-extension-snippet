@@ -16,11 +16,11 @@ registerPlugin({
     const div = document.createElement('div')
     div.className = 'snippet-pane-container'
     div.style.position = 'absolute'
-    div.style.right = '3%'
-    div.style.top = '50px'
+    div.style.right = '30%'
+    div.style.top = '80px'
     div.style.zIndex = '2048'
     div.style.maxWidth = '85%'
-    document.querySelector('.editor-container')!.appendChild(div)
+    document.querySelector('.content')!.appendChild(div)
 
     let panel: App | null = null
 
