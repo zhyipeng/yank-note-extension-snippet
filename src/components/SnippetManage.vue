@@ -84,7 +84,7 @@ onMounted(loadSnippets)
 
 .snippet-list {
   list-style: none;
-  max-height: 800px;
+  max-height: calc(100vh - 300px);
   overflow: auto;
   border-top: 2px solid var(--g-color-10);
   padding: 15px 0 0;

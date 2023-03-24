@@ -68,9 +68,9 @@ export class SnippetManager {
   load () {
     this.ctx.editor.tapSimpleCompletionItems(items => {
       this.snippets.forEach((s) => {
-        s.trigger.split(' ').forEach((t) => {
+        s.trigger.split(' ').filter(x => x.trim()).forEach((t) => {
           items.push({
-            label: `/ ${t}`,
+            label: `/ ${t.trim()}`,
             insertText: s.content,
           })
         })
