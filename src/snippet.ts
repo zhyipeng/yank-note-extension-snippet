@@ -10,10 +10,8 @@ export interface SnippetItem {
 export class SnippetManager {
   private static instance: SnippetManager
   private snippets: SnippetItem[] = []
-  private ctx: Ctx
 
   private constructor (private ctx: Ctx) {
-    this.ctx = ctx
     this.snippets = ctx.storage.get<SnippetItem[]>(StorageKey, [])
   }
 
@@ -36,7 +34,7 @@ export class SnippetManager {
           keys[`/ ${t}`] = true
         })
       })
-      const idx = []
+      const idx: number[] = []
       items.forEach((item, i) => {
         if (keys[item.label]) {
           idx.push(i)
