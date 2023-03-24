@@ -1,6 +1,6 @@
 import { Ctx } from '@yank-note/runtime-api'
 
-const StorageKey = 'plugin.snippet'
+const StorageKey = __EXTENSION_ID__ + '.snippets'
 
 export interface SnippetItem {
   trigger: string
