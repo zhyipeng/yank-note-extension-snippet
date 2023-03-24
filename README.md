@@ -5,8 +5,8 @@
 ## 配置
 
 - [状态栏]工具-文本片段
-![Img](doc/config.png)
+![Img](https://github.com/zhyipeng/yank-note-extension-snippet/blob/main/doc/config.png?raw=true)
 
 ## 使用
 和 yn 内置的一样, 输入`/`触发
-![Img](doc/trigger.png)
+![Img](https://github.com/zhyipeng/yank-note-extension-snippet/blob/main/doc/trigger.png?raw=true)
