@@ -1,6 +1,6 @@
 import { Ctx } from '@yank-note/runtime-api'
 
-const StorageKey = 'plugin.snippet'
+const StorageKey = __EXTENSION_ID__ + '.snippets'
 
 export interface SnippetItem {
   trigger: string
@@ -27,31 +27,6 @@ export class SnippetManager {
   }
 
   update (snippets: SnippetItem[]) {
-    this.ctx.editor.tapSimpleCompletionItems(items => {
-      const keys = {}
-      this.snippets.forEach((item) => {
-        item.trigger.split(' ').forEach((t) => {
-          keys[`/ ${t}`] = true
-        })
-      })
-      const idx: number[] = []
-      items.forEach((item, i) => {
-        if (keys[item.label]) {
-          idx.push(i)
-        }
-      })
-      idx.reverse().forEach(i => {
-        items.splice(i, 1)
-      })
-      snippets.forEach((s) => {
-        s.trigger.split(' ').forEach((t) => {
-          items.push({
-            label: `/ ${t}`,
-            insertText: s.content,
-          })
-        })
-      })
-    })
     this.snippets = snippets.map(s => ({ ...s }))
     this.ctx.storage.set(StorageKey, this.snippets)
   }

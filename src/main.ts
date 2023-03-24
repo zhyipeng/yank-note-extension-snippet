@@ -1,7 +1,6 @@
 import { registerPlugin } from '@yank-note/runtime-api'
 import SnippetManage from '@/components/SnippetManage.vue'
 
-import './style.css'
 import { App, createApp } from 'vue'
 import { SnippetManager } from '@/snippet'
 import i18n from '@/i18n'
