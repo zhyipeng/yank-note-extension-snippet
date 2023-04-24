@@ -10,3 +10,7 @@
 ## 使用
 和 yn 内置的一样, 输入`/`触发
 ![Img](https://github.com/zhyipeng/yank-note-extension-snippet/blob/main/doc/trigger.png?raw=true)
+
+## 预览
+首次使用需点击如图所示箭头展开面板 (鼠标移动到上面才会显示箭头), 之后会记忆该选择
+![Img](https://github.com/zhyipeng/yank-note-extension-snippet/blob/main/doc/detail.png?raw=true)

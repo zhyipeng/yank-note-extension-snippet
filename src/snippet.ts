@@ -72,7 +72,8 @@ export class SnippetManager {
           items.push({
             label: `/ ${t.trim()}`,
             insertText: s.content,
-          })
+            detail: s.content,
+          } as any)
         })
       })
     })
